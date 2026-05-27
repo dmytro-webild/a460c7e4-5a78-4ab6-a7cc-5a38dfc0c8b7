@@ -10,7 +10,7 @@ import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCar
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Crown, Facebook, Instagram, Scissors, Shirt, Sparkles, Tape, Whatsapp } from "lucide-react";
+import { Crown, Facebook, Instagram, MessageCircle, Ruler, Scissors, Shirt, Sparkles } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -62,7 +62,6 @@ export default function LandingPage() {
           ]}
           mediaAnimation="slide-up"
           ariaLabel="Hero section for Jorla Akins Apparel"
-          useInvertedBackground={true}
         />
       </div>
 
@@ -118,7 +117,7 @@ export default function LandingPage() {
               ]
             },
             {
-              title: "Clothing Alterations",              description: "Adjusting and improving existing clothing to achieve the perfect, flattering fit.",              icon: Tape,
+              title: "Clothing Alterations",              description: "Adjusting and improving existing clothing to achieve the perfect, flattering fit.",              icon: Ruler,
               mediaItems: [
                 { imageSrc: "http://img.b2bpic.net/free-photo/man-studio-creates-leather-ware_1157-33196.jpg", imageAlt: "Tailor adjusting suit sleeve" },
                 { imageSrc: "http://img.b2bpic.net/free-photo/colorful-buttons-spool-with-pink-knitted-needles-white-textured-backdrop_23-2147899113.jpg", imageAlt: "Sewing kit for alterations" }
@@ -210,7 +209,7 @@ export default function LandingPage() {
           inputPlaceholder="Your Email Address"
           buttonText="Order Custom Outfit"
           termsText="By clicking Order Custom Outfit you're confirming that you agree with our Terms and Conditions."
-          onSubmit={{}}
+          onSubmit={() => {}}
           ariaLabel="Contact section for custom outfit orders"
         />
       </div>
@@ -222,7 +221,7 @@ export default function LandingPage() {
           socialLinks={[
             { icon: Facebook, href: "#", ariaLabel: "Facebook page" },
             { icon: Instagram, href: "#", ariaLabel: "Instagram profile" },
-            { icon: Whatsapp, href: "https://wa.me/09064117714", ariaLabel: "WhatsApp us" }
+            { icon: MessageCircle, href: "https://wa.me/09064117714", ariaLabel: "WhatsApp us" }
           ]}
           ariaLabel="Site footer"
         />
